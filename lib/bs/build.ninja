@@ -1,0 +1,21 @@
+rescript = 1
+g_finger := C:\Users\ktpbw\Desktop\project\myName\node_modules\reason-react\lib\ocaml\install.stamp
+rule astj
+  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsc.exe"  -bs-v 8.4.2 -bs-jsx 3 -bs-super-errors -absname -bs-ast -o $out $i
+o src\App.ast : astj ..\..\src\App.res
+rule deps
+  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsb_helper.exe" -hash 6f75cb7e4dad48fa79dd6e0545bff799 -bs-ns AppTemplateReasonReact $in
+  restat = 1
+o src\App.d : deps src\App.ast
+rule mij
+  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsc.exe" -bs-ns AppTemplateReasonReact -I . -I src -I "C:\Users\ktpbw\Desktop\project\myName\node_modules\reason-react\lib\ocaml" -bs-super-errors  -bs-package-name app-template-reason-react -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src\App-AppTemplateReasonReact.cmj src\App-AppTemplateReasonReact.cmi ..\..\src\App.bs.js : mij src\App.ast
+o src\index.ast : astj ..\..\src\index.res
+o src\index.d : deps src\index.ast
+o src\index-AppTemplateReasonReact.cmj src\index-AppTemplateReasonReact.cmi ..\..\src\index.bs.js : mij src\index.ast
+rule build_package
+  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsc.exe" -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o AppTemplateReasonReact.cmi : build_package AppTemplateReasonReact.mlmap

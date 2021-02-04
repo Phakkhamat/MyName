@@ -1,0 +1,17 @@
+rescript = 1
+rule cp
+  command = cmd.exe /C copy /Y $i $out >NUL
+rule touch
+ command = cmd.exe /C type nul >>$out & copy $out+,, >NUL
+o App-AppTemplateReasonReact.cmi : cp ..\bs\src\App-AppTemplateReasonReact.cmi
+o App-AppTemplateReasonReact.cmj : cp ..\bs\src\App-AppTemplateReasonReact.cmj
+o App-AppTemplateReasonReact.cmt : cp ..\bs\src\App-AppTemplateReasonReact.cmt
+o App.res : cp ..\..\src\App.res
+o index-AppTemplateReasonReact.cmi : cp ..\bs\src\index-AppTemplateReasonReact.cmi
+o index-AppTemplateReasonReact.cmj : cp ..\bs\src\index-AppTemplateReasonReact.cmj
+o index-AppTemplateReasonReact.cmt : cp ..\bs\src\index-AppTemplateReasonReact.cmt
+o index.res : cp ..\..\src\index.res
+o AppTemplateReasonReact.cmi : cp ..\bs\AppTemplateReasonReact.cmi
+o AppTemplateReasonReact.cmj : cp ..\bs\AppTemplateReasonReact.cmj
+o AppTemplateReasonReact.cmt : cp ..\bs\AppTemplateReasonReact.cmt
+build install.stamp : touch App-AppTemplateReasonReact.cmi App-AppTemplateReasonReact.cmj index-AppTemplateReasonReact.cmi index-AppTemplateReasonReact.cmj AppTemplateReasonReact.cmi AppTemplateReasonReact.cmj
