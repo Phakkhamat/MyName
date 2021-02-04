@@ -6,7 +6,7 @@ let make = () => {
   
 
   <div className="App">
-    <React.StrictMode> <Name /> </React.StrictMode>
+    <React.StrictMode> <Name name="Phakkhamat"/> </React.StrictMode>
     <div className="line">
         <React.StrictMode> <Box color="aquamarine"/> </React.StrictMode>
         <React.StrictMode> <Box color="cyan"/> </React.StrictMode>
