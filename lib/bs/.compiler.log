@@ -1,14 +1,2 @@
-#Start(24492673)
-
-  Warning number 27
-  C:\Users\ktpbw\Desktop\project\myName\src\App.res:6:8-12
-  
-  4 │ @react.component
-  5 │ let make = () => {
-  6 │   let (count, setCount) = React.useState(() => 0.)
-  7 │ 
-  8 │   React.useEffect0(() => {
-  
-  unused variable count.
-  
-#Done(24494347)
+#Start(2497005)
+#Done(2497007)

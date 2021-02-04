@@ -7,6 +7,14 @@ o App-AppTemplateReasonReact.cmi : cp ..\bs\src\App-AppTemplateReasonReact.cmi
 o App-AppTemplateReasonReact.cmj : cp ..\bs\src\App-AppTemplateReasonReact.cmj
 o App-AppTemplateReasonReact.cmt : cp ..\bs\src\App-AppTemplateReasonReact.cmt
 o App.res : cp ..\..\src\App.res
+o Box-AppTemplateReasonReact.cmi : cp ..\bs\src\Box-AppTemplateReasonReact.cmi
+o Box-AppTemplateReasonReact.cmj : cp ..\bs\src\Box-AppTemplateReasonReact.cmj
+o Box-AppTemplateReasonReact.cmt : cp ..\bs\src\Box-AppTemplateReasonReact.cmt
+o Box.res : cp ..\..\src\Box.res
+o Name-AppTemplateReasonReact.cmi : cp ..\bs\src\Name-AppTemplateReasonReact.cmi
+o Name-AppTemplateReasonReact.cmj : cp ..\bs\src\Name-AppTemplateReasonReact.cmj
+o Name-AppTemplateReasonReact.cmt : cp ..\bs\src\Name-AppTemplateReasonReact.cmt
+o Name.res : cp ..\..\src\Name.res
 o index-AppTemplateReasonReact.cmi : cp ..\bs\src\index-AppTemplateReasonReact.cmi
 o index-AppTemplateReasonReact.cmj : cp ..\bs\src\index-AppTemplateReasonReact.cmj
 o index-AppTemplateReasonReact.cmt : cp ..\bs\src\index-AppTemplateReasonReact.cmt
@@ -14,4 +22,4 @@ o index.res : cp ..\..\src\index.res
 o AppTemplateReasonReact.cmi : cp ..\bs\AppTemplateReasonReact.cmi
 o AppTemplateReasonReact.cmj : cp ..\bs\AppTemplateReasonReact.cmj
 o AppTemplateReasonReact.cmt : cp ..\bs\AppTemplateReasonReact.cmt
-build install.stamp : touch App-AppTemplateReasonReact.cmi App-AppTemplateReasonReact.cmj index-AppTemplateReasonReact.cmi index-AppTemplateReasonReact.cmj AppTemplateReasonReact.cmi AppTemplateReasonReact.cmj
+build install.stamp : touch App-AppTemplateReasonReact.cmi App-AppTemplateReasonReact.cmj Box-AppTemplateReasonReact.cmi Box-AppTemplateReasonReact.cmj Name-AppTemplateReasonReact.cmi Name-AppTemplateReasonReact.cmj index-AppTemplateReasonReact.cmi index-AppTemplateReasonReact.cmj AppTemplateReasonReact.cmi AppTemplateReasonReact.cmj

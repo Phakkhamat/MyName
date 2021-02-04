@@ -1,1 +1,1 @@
-src\App-AppTemplateReasonReact.cmj : AppTemplateReasonReact.cmi
+src\App-AppTemplateReasonReact.cmj : AppTemplateReasonReact.cmi src\Box-AppTemplateReasonReact.cmj src\Box-AppTemplateReasonReact.cmi src\Name-AppTemplateReasonReact.cmj src\Name-AppTemplateReasonReact.cmi

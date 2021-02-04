@@ -4,7 +4,7 @@ rule astj
   command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsc.exe"  -bs-v 8.4.2 -bs-jsx 3 -bs-super-errors -absname -bs-ast -o $out $i
 o src\App.ast : astj ..\..\src\App.res
 rule deps
-  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsb_helper.exe" -hash 6f75cb7e4dad48fa79dd6e0545bff799 -bs-ns AppTemplateReasonReact $in
+  command = "C:\Users\ktpbw\Desktop\project\myName\node_modules\bs-platform\win32\bsb_helper.exe" -hash d317ec8af7211f2b64f7f99c26da522a -bs-ns AppTemplateReasonReact $in
   restat = 1
 o src\App.d : deps src\App.ast
 rule mij
@@ -12,6 +12,12 @@ rule mij
   dyndep = 1
   restat = 1
 o src\App-AppTemplateReasonReact.cmj src\App-AppTemplateReasonReact.cmi ..\..\src\App.bs.js : mij src\App.ast
+o src\Box.ast : astj ..\..\src\Box.res
+o src\Box.d : deps src\Box.ast
+o src\Box-AppTemplateReasonReact.cmj src\Box-AppTemplateReasonReact.cmi ..\..\src\Box.bs.js : mij src\Box.ast
+o src\Name.ast : astj ..\..\src\Name.res
+o src\Name.d : deps src\Name.ast
+o src\Name-AppTemplateReasonReact.cmj src\Name-AppTemplateReasonReact.cmi ..\..\src\Name.bs.js : mij src\Name.ast
 o src\index.ast : astj ..\..\src\index.res
 o src\index.d : deps src\index.ast
 o src\index-AppTemplateReasonReact.cmj src\index-AppTemplateReasonReact.cmi ..\..\src\index.bs.js : mij src\index.ast
