@@ -5,6 +5,6 @@ let make = (~name) => <h1 style={ReactDOMRe.Style.make(
       ~flexDirection="column",
       ~textAlign="center",
         (),
-      )}>{ReasonReact.string("Name: " + name)}</h1>;
+      )}>{ReasonReact.string("Name: " ++ name)}</h1>;
 
 let default = make;
